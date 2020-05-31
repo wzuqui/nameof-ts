@@ -14,10 +14,6 @@ interface IPessoa {
     hierarquiaOrganizacional: IHierarquiaOrganizacional;
 }
 
-function cleanseAssertionOperators(parsedName: string): string {
-    return parsedName;
-}
-
 function nameof<T, TOut = unknown>(selector: (element: T) => TOut): string {
     const selectorString = selector.toString();
 
